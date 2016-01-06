@@ -7,11 +7,11 @@
 
 'use strict';
 
+window.onload = function () {
+	var rewind = new Rewind();
+}
 
 class Rewind {
-
-
-
     constructor() {
     	this.players = [];
 		this.init();        
@@ -27,38 +27,5 @@ class Rewind {
 
 }
 
-class Player {
-	constructor(video) {
-		this.parent = video.parentNode;
-        this.video = new Video(video);
-        this.createNode();
-        this.insertNode();
-        this.replaceNode();
-    }
 
-    createNode(){
-    	this.container = document.createElement('div');
-    }
 
-    insertNode(){
-   		this.parent.insertBefore(this.container, this.video.getDomElement);
-    }
-    replaceNode(){
-    	this.container.appendChild(this.video.getDomElement);
-    }
-}
-
-class Video {
-	constructor(video){
-		this.domElement = video;
-	}
-	get getDomElement(){
-		return this.domElement;
-	}
-	
-	
-}
-
-window.onload = function () {
-	var rewind = new Rewind();
-}
