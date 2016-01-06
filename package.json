@@ -1,0 +1,22 @@
+{
+  "name": "rewind.js",
+  "version": "0.1.0",
+  "description": "La evolución de los reproductores web",
+  "dependencies": {
+    "babel-cli": "^6.3.17"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "babel src -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GersonLazaro/rewind.js.git"
+  },
+  "author": "Gerson Lázaro <GersonLazaro@GersonLazaro.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GersonLazaro/rewind.js/issues"
+  },
+  "homepage": "https://github.com/GersonLazaro/rewind.js#readme"
+}
